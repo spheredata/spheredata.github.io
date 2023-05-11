@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Iframe</title>
+    <style>
+        #upper_left {
+	position: absolute;
+	top: 2%;
+	left: 2%;
+}
+#upper_right {
+	position: absolute;
+	top: 2%;
+	right: 2%;
+}
+#lower_left {
+	position: absolute;
+	bottom: 2%;
+	left: 2%;
+}
+#lower_right {
+	bottom: 2%;
+	right: 2%;
+	position: absolute;
+}
+
+    a {
+        cursor: pointer;
+    }
+    
+    
+    body {
+        background-color: black;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <a href="pen.html">
+        <h2 id="upper_left">Juicy Pen</h2>
+    </a>
+    <a href="no.html" target="_blank">
+        <h2 id="upper_right" target="_blank">Article not published yet!</h2>
+    </a>
+    <a href="no.html">
+        <h2 id="lower_left" target="_blank">Article not published yet!</h2>
+    </a>
+    <a href="no.html">
+        <h2 id="lower_right" target="_blank">Article not published yet!</h2>
+    </a>
+</body>
+</html>

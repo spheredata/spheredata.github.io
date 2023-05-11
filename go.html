@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HISTORY IS ENABLED</title>
+    <style>
+        
+        .container {
+  background: red;
+  width: 250px;
+  height: 100px;
+}
+.box {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around */ /* remove; doing nothing */
+}
+.two {
+  background-image: radial-gradient(red, black);
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 33vw;
+  display: block;
+}
+.one {
+  background: rgb(0, 0, 0);
+  flex: 2 1 auto;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 66vw;
+}
+body {
+  border:red;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.notes {
+  align-items: center;
+  text-align: center;
+  
+}
+    .gamecard {
+      background-image: linear-gradient(to bottom, rgb(0, 0, 0), red);
+      transition: height 1s linear;
+      cursor: pointer;
+      border: 2px solid red;
+      border-radius: 5px;
+      margin-left: 10px;
+      margin-right: 10px;
+      height: 158px;
+      width: 102px;
+   }
+    .gamename {
+      color: white;
+    }
+    img, .gameimg {
+      transition: height 1s linear;
+    }
+
+    .big {
+      display: flex;
+    }
+
+    </style>
+</head>
+<body>
+  <audio src="/Media/pac-man-intro-music.mp3" autoplay></audio>
+    <div class="box">
+      <div class="one">
+
+
+
+        <center>
+          <div class="big">
+          <a href="waltuh.html">
+            <div class="gamecard">
+              <div class="gameimg">
+                <img src="gmedia/walter.jpg" style="height: 100px; width: 100px;">
+              </div>
+              <div class="gamename">
+                <p>Walter White Run</p>
+              </div>
+            </div>
+  
+          </a>
+          <a href="slope.html">
+            <div class="gamecard">
+              <div class="gameimg">
+                <img src="gmedia/slope.png" style="height: 100px; width: 100px;">
+              </div>
+              <div class="gamename">
+                <p>Slope</p>
+              </div>
+            </div>
+  
+          </a>
+          <a href="pacman.html">
+            <div class="gamecard">
+              <div class="gameimg">
+                <img src="gmedia/pacman.png" style="height: 100px; width: 100px;">
+              </div>
+              <div class="gamename">
+                <p>Pac-Man</p>
+              </div>
+            </div>
+  
+          </a>
+          <a href="monkey.html">
+            <div class="gamecard">
+              <div class="gameimg">
+                <img src="gmedia/monkey.png" style="height: 100px; width: 100px;">
+              </div>
+              <div class="gamename">
+                <p>Monkey Mart</p>
+              </div>
+            </div>
+  
+          </a>
+
+          <a href="rocket.html">
+            <div class="gamecard">
+              <div class="gameimg">
+                <img src="gmedia/rocketpult.jpg" style="height: 100px; width: 100px;">
+              </div>
+              <div class="gamename">
+                <p>Rocketpult</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <br>
+        
+
+        <a href="tomb.html">
+          <div class="gamecard">
+            <div class="gameimg">
+              <img src="gmedia/tomb.png" style="height: 100px; width: 100px;">
+            </div>
+            <div class="gamename">
+              <p>Tomb of the Mask</p>
+            </div>
+          </div>
+        </a>
+      </div>
+        </center>
+    </div>
+      <div class="two">
+        <div class="notes">
+          <br>
+          <h3 id="notetitle">Note</h3>
+          <p id="note">Hi!  Now that this page is . . . <i>functional</i> . . .  it will be updated with 
+            games regularly.  You can request games on the forms page, on the home screen.</p>
+            <br>
+            <br>
+            <br>
+            <p id="gamecredits">Walter White Run:  Myself, made with Scratch.  Slope:  Y8 Games.  Pac-Man:  Who the heck knows who made Pac-Man?!  Monkey Mart:  Idk, I got it from FoxMoss.</p>
+        </div>
+      </div>
+    </div>
+        
+    
+    <footer>
+      <p>DataSphere Games Hub, V1, Pre-Beta</p>
+      <p>(C) Doctor Lemon, 2023</p>
+    </footer>
+</body>
+</html>
