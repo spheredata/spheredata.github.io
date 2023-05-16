@@ -164,14 +164,14 @@
     <script>
         function password() {
           var password;
-          var pass1 = "ohio";
+          var pass1 = "florida";
           var pass2 = "song";
       
-          password = prompt('Password required.  "Whoop! Down in _____, swag like ______!"  Please note that this password is subject to change.', 'Type password here.');
+          password = prompt('Password required.  Zoo for crazy white people.  (it is a U.S. state, no capitals.)  Please note that this password is subject to change.', 'Type password here.');
       
           if (password == pass1) {
             create(); // Call create() function if password is correct
-          if (password == pass2) {
+          else if (password == pass2) {
             song();
           }
           } else {
@@ -211,7 +211,7 @@
 
 
         function song() {
-          var url = "https://doctor-lemon.github.io/datasphere/bingchilling.html";
+          var url = "https://spheredata.github.io/bing.html";
           document.getElementById('input');
           var win = window.open();
           win.document.body.style.margin = '0';
