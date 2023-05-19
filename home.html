@@ -163,21 +163,21 @@
     <h3><span>-</span></h3>
     <script>
         function password() {
-          var password;
-          var pass1 = "oui";
-          var pass2 = "hello";
-      
-          password = prompt('Password required.  Est-ce français?  Please note that this password is subject to change.', 'Type password here.');
-      
-          if (password == pass1) {
-            create(); // Call create() function if password is correct
-          if (password == pass2) {
-            really();
-          }
-          } else {
-           denied();
-          }
-        }
+              var password;
+              var pass1 = "oui";
+              var pass2 = "hello";
+          
+              password = prompt('Password required.  Est-ce français?  Please note that this password is subject to change.', 'Type password here.');
+          
+              if (password == pass1) {
+                create(); // Call create() function if password is correct
+              }
+              else if (password == pass2) {
+                games();
+              }else {
+               denied();
+              }
+            }
 
         
         function create() {
@@ -210,8 +210,32 @@
         }
 
 
-        function really() {
-          window.alert('Really?! Damn bro . . . Just type "hello" next time.')
+        function games() {
+            win = window.open();
+            win.document.body.style.margin = '0';
+            win.document.body.style.height = '100vh';
+            win.document.body.style.width = '100vw';
+
+            var icon = win.document.createElement('link')
+            icon.rel = "shortcut icon"
+            icon.href = window.location.origin+"https://spheredata.github.io/Media/classroom.png"
+            icon.type = "image/png"
+            win.document.head.appendChild(icon)
+
+            var title = win.document.createElement('title')
+            title.innerText = "Classroom"
+            win.document.head.appendChild(title)
+
+            var url = "https://spheredata.github.io/g/go.html";
+
+            var iframe = win.document.createElement('iframe');
+            iframe.style.border = 'none';
+            iframe.style.width = '100%';
+            iframe.style.height = '100%';
+            iframe.style.margin = '0';
+            iframe.id = 'content';
+            iframe.src = url;
+            win.document.body.appendChild(iframe);
         }
 
         function denied() {
