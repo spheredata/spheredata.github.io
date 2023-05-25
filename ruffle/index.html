@@ -14,13 +14,13 @@ swfobject.embedSWF = function(url, cont, width, height){
         player = Object.assign(document.getElementById(cont).appendChild(ruffle.createPlayer()), {
             width: width,
             height: height,
-            style: 'width: ' + width + 'px; height: ' + height + 'px',
+            style: 'width: ' + width + '%; height: ' + height + '%',
         });
     
     player.load({ url: url });
 }
 
-swfobject.embedSWF('https://spheredata.github.io/ruffle/swf/whack.swf', 'ruffle', 500, 500);
+swfobject.embedSWF('https://spheredata.github.io/ruffle/swf/whack.swf', 'ruffle', 100, 100);
         </script>
     </body>
 </html>
