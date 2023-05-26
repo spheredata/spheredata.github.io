@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset='utf8'>
+    </head>
+    <body>
+        <script>window.alert("This game is working, it just takes a long time to load.  The page will go blank, just wait.  It might help to go to another tab while it loads.")</script>
+        <div id='ruffle'></div>
+        <script src='https://spheredata.github.io/ruffle/ruffle.js'></script>
+        <script>
+var swfobject = {};
+
+swfobject.embedSWF = function(url, cont, width, height){
+    var ruffle = window.RufflePlayer.newest(),
+        player = Object.assign(document.getElementById(cont).appendChild(ruffle.createPlayer()), {
+            width: width,
+            height: height,
+            style: 'width: ' + width + '%; height: ' + height + '%',
+        });
+    
+    player.load({ url: url });
+}
+
+swfobject.embedSWF('https://spheredata.github.io/ruffle/swf/meat.swf', 'ruffle', 100, 100);
+        </script>
+    </body>
+</html>
